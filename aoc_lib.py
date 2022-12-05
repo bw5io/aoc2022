@@ -15,6 +15,23 @@ def fileToArray(filename, returnInt=False):
         output.append(thisline)
     return output
 
+def fileToArrayNoStrip(filename, returnInt=False):
+    output=[]
+    openedfile=open(filename)
+    flag=False
+    while True:
+        thisline = openedfile.readline()
+        if returnInt==True and thisline.isnumeric():
+            thisline=int(thisline)
+            flag=False
+        if thisline=='':
+            if flag == True:
+                break
+            else:
+                flag = True
+        output.append(thisline)
+    return output
+
 def fileToMap(filename, sep, returnInt=False):
     input=fileToArray(filename)
     output=[]
