@@ -1,10 +1,10 @@
-def fileToArray(filename, returnInt=False):
+def fileToArray(filename, return_int=False):
     output=[]
     openedfile=open(filename)
     flag=False
     while True:
         thisline = openedfile.readline().strip()
-        if returnInt==True and thisline.isnumeric():
+        if return_int==True and thisline.isnumeric():
             thisline=int(thisline)
             flag=False
         if thisline=='':
@@ -15,13 +15,13 @@ def fileToArray(filename, returnInt=False):
         output.append(thisline)
     return output
 
-def fileToArrayNoStrip(filename, returnInt=False):
+def fileToArrayNoStrip(filename, return_int=False):
     output=[]
     openedfile=open(filename)
     flag=False
     while True:
         thisline = openedfile.readline()
-        if returnInt==True and thisline.isnumeric():
+        if return_int==True and thisline.isnumeric():
             thisline=int(thisline)
             flag=False
         if thisline=='':
@@ -32,7 +32,7 @@ def fileToArrayNoStrip(filename, returnInt=False):
         output.append(thisline)
     return output
 
-def fileToMap(filename, sep, returnInt=False):
+def fileToMap(filename, sep, return_int=False):
     input=fileToArray(filename)
     output=[]
     for i in input:
@@ -40,7 +40,7 @@ def fileToMap(filename, sep, returnInt=False):
             line=list(i)
         else:
             line=i.split(sep)
-        if returnInt==True:
+        if return_int==True:
             line=[int(element) for element in line]
         output.append(line)
     return output
