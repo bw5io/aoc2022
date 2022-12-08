@@ -36,6 +36,8 @@ def fileToMap(filename, sep, return_int=False):
     input=fileToArray(filename)
     output=[]
     for i in input:
+        if i=="":
+            break
         if sep=="":
             line=list(i)
         else:
