@@ -1,6 +1,6 @@
-from aoc_lib import fileToArrayNoStrip
+from aoc_lib import file_to_array_no_strip
 
-day5input = fileToArrayNoStrip("day5-1.txt")
+day5input = file_to_array_no_strip("day5-1.txt")
 
 stack = {}
 lineIndex = 0

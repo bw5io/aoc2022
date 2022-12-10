@@ -1,4 +1,4 @@
-from aoc_lib import fileToArray
+from aoc_lib import file_to_array
 
 class folder:
     def __init__(self, container):
@@ -58,7 +58,7 @@ class folder:
 rootNode=folder(None)
 currentNode=rootNode
 
-day7input = fileToArray("day7-1.txt")
+day7input = file_to_array("day7-1.txt")
 for i in day7input:
     if i=="":
         break

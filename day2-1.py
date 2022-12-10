@@ -1,5 +1,5 @@
-from aoc_lib import fileToArray
-day2list=fileToArray("day2-1.txt", False)
+from aoc_lib import file_to_array
+day2list=file_to_array("day2-1.txt", False)
 SCORE={"X":1,"Y":2,"Z":3}
 WIN_LOSE={0:3, 1:6, 2:0}
 

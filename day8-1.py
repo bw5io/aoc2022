@@ -1,4 +1,4 @@
-from aoc_lib import fileToMap
+from aoc_lib import file_to_map
 
 def check_eligibility(map):
     count=0
@@ -31,7 +31,6 @@ def check_best_spot(map):
                 step+=1
                 if map[i][j]<=map[i][x]:
                     break
-                
             score*=step
             step=0
             for x in range(j+1,len(map[i]),1):
@@ -46,11 +45,5 @@ def check_best_spot(map):
     return max_score
 
 
-day8_map=fileToMap("day8-1.txt", "", True)
-
-# print(day8_map)
-
-# eligibleTrees=len(day8_map)*2+len(day8_map[0])*2-4
-# print(eligibleTrees+check_eligibility(day8_map))
-
+day8_map=file_to_map("day8-1.txt", "", True)
 print(check_best_spot(day8_map))

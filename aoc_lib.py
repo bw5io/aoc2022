@@ -1,4 +1,4 @@
-def fileToArray(filename, return_int=False):
+def file_to_array(filename, return_int=False):
     output=[]
     openedfile=open(filename)
     flag=False
@@ -15,7 +15,7 @@ def fileToArray(filename, return_int=False):
         output.append(thisline)
     return output
 
-def fileToArrayNoStrip(filename, return_int=False):
+def file_to_array_no_strip(filename, return_int=False):
     output=[]
     openedfile=open(filename)
     flag=False
@@ -32,10 +32,10 @@ def fileToArrayNoStrip(filename, return_int=False):
         output.append(thisline)
     return output
 
-def fileToMap(filename, sep, return_int=False):
-    input=fileToArray(filename)
+def file_to_map(filename, sep, return_int=False):
+    input_file=file_to_array(filename)
     output=[]
-    for i in input:
+    for i in input_file:
         if i=="":
             break
         if sep=="":
@@ -47,13 +47,13 @@ def fileToMap(filename, sep, return_int=False):
         output.append(line)
     return output
 
-def addDictList(obj, key, value):
+def add_dict_map(obj, key, value):
     if key in obj:
         obj[key].append(value)
     else:
         obj[key]=[value]
 
-def addDict(obj, key, value):
+def add_dict(obj, key, value):
     if key in obj:
         obj[key]+=value
     else:

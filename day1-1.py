@@ -1,5 +1,5 @@
-from aoc_lib import fileToArray
-day1list=fileToArray("day1-1.txt", True)
+from aoc_lib import file_to_array
+day1list=file_to_array("day1-1.txt", True)
 print(day1list)
 currentSum, currentMax = 0, 0
 for i in day1list:

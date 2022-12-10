@@ -1,4 +1,4 @@
-from aoc_lib import fileToArray
+from aoc_lib import file_to_array
 
 def parse_data(input_file):
     output=[]
@@ -61,7 +61,7 @@ def travel_part_2(input_data):
             output.add((knots[9][0], knots[9][1]))
     return output
 
-input_data = parse_data(fileToArray("day9-1.txt"))
+input_data = parse_data(file_to_array("day9-1.txt"))
 print(input_data)
 
 print(travel_part_2(input_data))

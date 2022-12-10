@@ -1,6 +1,6 @@
-from aoc_lib import fileToArrayNoStrip
+from aoc_lib import file_to_array_no_strip
 
-day6input = fileToArrayNoStrip("day6-1.txt")
+day6input = file_to_array_no_strip("day6-1.txt")
 
 def find_unique_characters(input, target):
     head=0

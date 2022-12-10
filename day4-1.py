@@ -1,8 +1,8 @@
-from aoc_lib import fileToArray
+from aoc_lib import file_to_array
 
 result=0
 
-day4input = fileToArray("day4-1.txt")
+day4input = file_to_array("day4-1.txt")
 print(day4input)
 index=0
 while day4input[index]!="":

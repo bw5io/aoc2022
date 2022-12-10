@@ -1,6 +1,6 @@
-from aoc_lib import fileToArray
+from aoc_lib import file_to_array
 
-day3list=fileToArray("day3-1.txt", False)
+day3list=file_to_array("day3-1.txt", False)
 
 prioritySum=0
 

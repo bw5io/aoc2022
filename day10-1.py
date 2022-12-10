@@ -1,7 +1,7 @@
-from aoc_lib import fileToArray
+from aoc_lib import file_to_array
 
 def parse_data(file_name):
-    output_data=fileToArray(file_name)
+    output_data=file_to_array(file_name)
     output_data.pop()
     output=[i.split(" ") for i in output_data]
     return output
